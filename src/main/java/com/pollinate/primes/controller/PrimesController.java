@@ -33,7 +33,6 @@ public class PrimesController {
 	@GetMapping(value = "/primes/{inputNumber}", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
 	@ResponseStatus(code = HttpStatus.OK)
 	public @ResponseBody PrimesResponseModel getActiveContracts(@PathVariable Integer inputNumber) {
-		//logger.info("things worked");
 		return orchestration.getPrimeNumbers(inputNumber);
 	} 
 	

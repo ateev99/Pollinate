@@ -1,8 +1,8 @@
 # Read Me First
-Pollinate Prime example demonstrates and calculates the list of prime number that are present between the number provided.
+Pollinate Prime service demonstrates and calculates the list of prime number that are present between the number provided. It takes a number as a request URL path variable and calculates the prime number present from 1 to input number.
 
 # Getting Started
-You can clone this public repo for using git clone.
+You can clone this public repo by using git clone.
 
 ## System Requirement
 * Maven
@@ -27,7 +27,7 @@ You can clone this public repo for using git clone.
 
 
 ## Using postman collection
-* Postman collection has been kept in Pollinate folder which can be imported to test the application
+* Postman collection 'Pollinate Prime.postman_collection.json' has been kept in Pollinate folder which can be imported via Postman to run and test the service.
 * A request with name `Get Primes` has been added to this collection. It has two requests: 1. Get Primes - JSON 2. Get Primes - XML.
 
 ## Logs
