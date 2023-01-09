@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "d579642d-809d-4b46-9063-bc1d5547880c",
+		"name": "Pollinate Prime",
+		"description": "# Pollinate Prime\n\nPollinate Prime API demonstrates and calculates the list of prime number that are present between the number provided. It takes a number as a request URL path variable and calculates the prime number present from 1 to input number.\n\n## Getting Started.\n\nTo start sending the request to '_Get Primes_' make sure that you have provided a number in the get URL\n\nA request with name '_**Get Primes**_ ' has been added to this collection.\n\nIt has two requests:\n\n- Get Primes - Json\n- Get Primes - XML\n    \n\nURL: localhost:8080/primes/\n\nExample: being localhost:8080/primes/10\n\n### Options\n\nThe request accepts following header in _accept_ field\n\n- application/json\n- application/xml\n    \n\nfrom the API. By default it is set to appplication/Json.\n\n### Restrictions\n\n- The service only accepts numbers. Providing any other data type would result in error.\n    \n\n### Test Cases\n\nIn order to test the API two folders of test cases has been added.\n\n- Positive scenarios\n    - Response body has correct keys\n    - Response status is correct\n    - Response does not have any error.\n- Negative scenario\n    - Response has correct status set.\n\n_**Please note**_ that you could see response time out in postman due to response memory size. In that case you need to increase response memory of postman\n\nThe way to do it is by going to\n\nSettings >> General >> Max Response size in MB (increase the size of this field)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10497277"
+	},
+	"item": [
+		{
+			"name": "Test Cases",
+			"item": [
+				{
+					"name": "Positive Scenario",
+					"item": [
+						{
+							"name": "Response body has correct variables",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Response body has correct variables\", function () {",
+											"    const responseJson = pm.response.json();",
+											"    pm.expect(responseJson).to.key.name.includes(\"Initial\");",
+											"    pm.expect(responseJson).to.key.name.includes(\"Priimes\");",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/primes/10",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"primes",
+										"10"
+									]
+								},
+								"description": "Serivce to calculate prime numbers within the range of input number."
+							},
+							"response": []
+						},
+						{
+							"name": "Check rersponse status to be 200",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Respone to have correct status\", function () {",
+											"    pm.response.to.not.have.jsonBody(\"error\");",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/primes/10",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"primes",
+										"10"
+									]
+								},
+								"description": "Serivce to calculate prime numbers within the range of input number."
+							},
+							"response": []
+						},
+						{
+							"name": "Check response does not have any error",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Response body does not contain error\", function () {",
+											"    pm.response.to.not.have.jsonBody(\"error\");",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/primes/10",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"primes",
+										"10"
+									]
+								},
+								"description": "Serivce to calculate prime numbers within the range of input number."
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Negative Scenario",
+					"item": [
+						{
+							"name": "Check request param should be a number",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Error on reqest path param has something other than number\", () => {",
+											"  pm.response.to.have.status(400);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/primes/10'",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"primes",
+										"10'"
+									]
+								},
+								"description": "Serivce to calculate prime numbers within the range of input number."
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Get Primes - Json",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/primes/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"primes",
+						"10"
+					]
+				},
+				"description": "Serivce to calculate prime numbers within the range of input number which return result in JSON"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Primes - XML",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/primes/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"primes",
+						"10"
+					]
+				},
+				"description": "Serivce to calculate prime numbers within the range of input number which returns result in xml"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status test\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	]
+}

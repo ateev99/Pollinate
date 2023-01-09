@@ -1,0 +1,43 @@
+2023-01-09 23:31:44.442  INFO 11063 --- [main] c.p.primes.PrimesApplicationTests        : Starting PrimesApplicationTests using Java 11.0.17 on Ateevs-MBP.broadband with PID 11063 (started by ateevkumar in /Users/ateevkumar/Office/Workspaces/LastTry/Pollinate)
+2023-01-09 23:31:44.443  INFO 11063 --- [main] c.p.primes.PrimesApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-01-09 23:31:45.124  INFO 11063 --- [main] c.p.primes.PrimesApplicationTests        : Started PrimesApplicationTests in 0.829 seconds (JVM running for 1.274)
+2023-01-09 23:31:54.850  INFO 11107 --- [main] com.pollinate.primes.PrimesApplication   : Starting PrimesApplication using Java 11.0.17 on Ateevs-MBP.broadband with PID 11107 (/Users/ateevkumar/Office/Workspaces/LastTry/Pollinate/target/classes started by ateevkumar in /Users/ateevkumar/Office/Workspaces/LastTry/Pollinate)
+2023-01-09 23:31:54.851  INFO 11107 --- [main] com.pollinate.primes.PrimesApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-09 23:31:55.174  INFO 11107 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-09 23:31:55.178  INFO 11107 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-09 23:31:55.178  INFO 11107 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-09 23:31:55.208  INFO 11107 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-09 23:31:55.208  INFO 11107 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 340 ms
+2023-01-09 23:31:55.360  INFO 11107 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 23:31:55.365  INFO 11107 --- [main] com.pollinate.primes.PrimesApplication   : Started PrimesApplication in 0.667 seconds (JVM running for 0.798)
+2023-01-09 23:32:04.706  INFO 11107 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-09 23:32:04.707  INFO 11107 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-09 23:32:04.708  INFO 11107 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-09 23:37:26.292  INFO 11462 --- [main] com.pollinate.primes.PrimesApplication   : Starting PrimesApplication using Java 11.0.17 on Ateevs-MBP.broadband with PID 11462 (/Users/ateevkumar/Office/Workspaces/LastTry/Pollinate/target/classes started by ateevkumar in /Users/ateevkumar/Office/Workspaces/LastTry/Pollinate)
+2023-01-09 23:37:26.293  INFO 11462 --- [main] com.pollinate.primes.PrimesApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-09 23:37:26.611  INFO 11462 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-09 23:37:26.615  INFO 11462 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-09 23:37:26.615  INFO 11462 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-09 23:37:26.642  INFO 11462 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-09 23:37:26.643  INFO 11462 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 333 ms
+2023-01-09 23:37:26.794  INFO 11462 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 23:37:26.799  INFO 11462 --- [main] com.pollinate.primes.PrimesApplication   : Started PrimesApplication in 0.66 seconds (JVM running for 0.799)
+2023-01-09 23:37:35.062  INFO 11462 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-09 23:37:35.063  INFO 11462 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-09 23:37:35.064  INFO 11462 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-09 23:46:02.349  INFO 12043 --- [main] com.pollinate.primes.PrimesApplication   : Starting PrimesApplication using Java 11.0.17 on Ateevs-MBP.broadband with PID 12043 (/Users/ateevkumar/Office/Workspaces/LastTry/Pollinate/target/classes started by ateevkumar in /Users/ateevkumar/Office/Workspaces/LastTry/Pollinate)
+2023-01-09 23:46:02.350  INFO 12043 --- [main] com.pollinate.primes.PrimesApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-09 23:46:02.674  INFO 12043 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-09 23:46:02.678  INFO 12043 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-09 23:46:02.678  INFO 12043 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-09 23:46:02.704  INFO 12043 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-09 23:46:02.704  INFO 12043 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 337 ms
+2023-01-09 23:46:02.852  INFO 12043 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 23:46:02.857  INFO 12043 --- [main] com.pollinate.primes.PrimesApplication   : Started PrimesApplication in 0.664 seconds (JVM running for 0.795)
+2023-01-09 23:46:07.445  INFO 12043 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-09 23:46:07.446  INFO 12043 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-09 23:46:07.447  INFO 12043 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-09 23:46:09.221  INFO 12043 --- [http-nio-8080-exec-2] c.p.primes.controller.PrimesController   : com.pollinate.primes.model.PrimesResponseModel@353444b8
+2023-01-09 23:46:20.439  INFO 12043 --- [http-nio-8080-exec-3] c.p.primes.controller.PrimesController   : com.pollinate.primes.model.PrimesResponseModel@353444b8
+2023-01-09 23:46:33.243  INFO 12043 --- [http-nio-8080-exec-4] c.p.primes.controller.PrimesController   : com.pollinate.primes.model.PrimesResponseModel@353444b8
+2023-01-09 23:46:52.413  INFO 12043 --- [http-nio-8080-exec-5] c.p.primes.controller.PrimesController   : com.pollinate.primes.model.PrimesResponseModel@353444b8
